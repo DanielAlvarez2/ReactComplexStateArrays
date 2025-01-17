@@ -1,0 +1,18 @@
+main{
+    width:200px;
+    height:500px;
+    text-align: center;
+    background:lightgreen;
+}
+button{
+    height:50px;
+    width:150px;
+    border-radius: 20px;
+    border:2px solid white;
+    color:white;
+    font-size: 20px;
+    font-weight: 700;
+    cursor:pointer;
+    background: transparent;
+    margin-top: 20px;
+}
