@@ -1,12 +1,13 @@
+import {useState} from 'react'
 
 function App() {
 
-  const myFavoriteThings = []
+  const [myFavoriteThings, setMyFavoriteThings] = useState([])
   const allFavoriteThings = ['💦🌹','🐱','💡🫖','🔥🧤','🎁','🐴','🍎','🚪🔔','🛷🔔','🥩🍝','🪿🌕']
   const thingsElements = myFavoriteThings.map(thing => <p key={thing}>{thing}</p>)
   
   function addFavoriteThing(){
-
+    setMyFavoriteThings(prevThings=>[...prevThings, allFavoriteThings[prevThings.length]])
   }
 
   return (
